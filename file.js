@@ -31,7 +31,9 @@ console.log(today.toLocaleString(undefined, options[2]));
 
 options.forEach(option => {
   const element = document.createElement("h2");
-  const text = document.createTextNode("17-12-2025");
+  const dataFormattata = today.toLocaleString(undefined, option);
+  const text = document.createTextNode(dataFormattata);
   element.appendChild(text);
   document.querySelector("body").appendChild(element);
 })
+
