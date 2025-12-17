@@ -2,42 +2,45 @@
 <html>
 
 <head>
-    <title>JavaScript exercises</title>
-    <style>
-        body {
-            font-family: Calibri, sans-serif;
-            background-color: #d9daa8;
-            color: #c92657;
-        }
+  <title>JavaScript exercises</title>
+  <style>
+    body {
+      font-family: Calibri, sans-serif;
+      background-color: #d9daa8;
+      color: #c92657;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
 
-        p {
-            font-size: 1.2em;
-        }
-    </style>
+    p {
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>JavaScript excercises</h1>
-    <p>Sommare gli elementi di un array</p>
-    <script>
-      let arr = [];
-      const numEl = 3;
-      const max = 100;
-      for(let i=0; i<numEl; i++){
-        arr.push(Math.floor(Math.random()*max));
-      }
+  <h1>JavaScript excercises</h1>
+  <p>Sommare gli elementi di un array</p>
+  <script>
+    let arr = [];
+    const numEl = 3;
+    const max = 100;
+    for (let i = 0; i < numEl; i++) {
+      arr.push(Math.floor(Math.random() * max));
+    }
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
 
-      let sum = 0;
-      arr.forEach(item =>{
-        sum += item;
-      })
-      console.log(sum);
-    </script>
+    let sum = 0;
+    arr.forEach(item => {
+      sum += item;
+    })
+    console.log(sum);
+  </script>
 </body>
 
 </html>
